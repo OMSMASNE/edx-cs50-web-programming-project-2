@@ -1,0 +1,172 @@
+/*
+    Copyright (C) 2019 OM SANTOSHKUMAR MASNE. All Rights Reserved.
+    Licensed under the GNU Affero General Public License v3.0 only (AGPL-3.0-only) license.
+    See License.txt in the project root for license information.
+*/
+
+#creator 
+{
+    color: #11ff88;
+    font-weight: bold;
+}
+
+.footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: grey;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#channels_style
+{
+    border: 3px solid yellow;
+    margin: 4;
+    color: white;
+    overflow: auto;
+}
+
+#channels
+{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#msgs_style
+{
+    border: 3px solid red;
+    margin: 0;
+    color: white;
+    height: 100%;
+    overflow: auto;
+}
+
+#msgs
+{
+    padding: 5px;
+}
+
+.msg_metadata
+{
+    color: rgb(255, 119, 119);
+    font-size: 12px;
+    pointer-events: none;
+}
+
+
+#server_users_style
+{
+    border: 3px solid yellow;
+    margin: 0;
+    color: white;
+    overflow: auto;
+}
+
+#server_users
+{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sent_msg
+{
+    list-style: none;
+    background: rgba(98, 199, 80, 0.5);
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.sent_msg:hover
+{
+    background: rgba(117, 246, 94, 0.671);
+}
+
+.sent_msg_selected
+{
+    background: rgba(85, 240, 58, 0.787);
+}
+
+.recieved_msg
+{
+    list-style: none;
+    text-align: right;
+    background: rgba(30, 144, 251, 0.5);
+    border: 1px solid black;
+    padding: 1px;
+}
+
+#inner_app_window
+{
+    height: 80%;
+    border: 4px dashed rgb(17, 219, 17);
+}
+
+#user_msg_send
+{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+#delete_msg_btn
+{
+    float: left;
+    margin-top: 3px;
+}
+
+#modal_msg
+{
+    color: limegreen;
+    opacity: 0.6;
+}
+
+#modal_channel
+{
+    color: limegreen;
+    opacity: 0.6;
+}
+
+#channel_info
+{
+    color: rgb(255, 25, 243);
+    float: left;
+    font-size: 2rem;
+}
+
+#app_window
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 90%;
+    height: 550px;
+    padding: 4px;
+    border: 5px solid cyan;
+}
+
+#message_box
+{
+    text-decoration: none;
+    text-align: right;
+}
+
+#channels_control
+{
+    text-decoration: none;
+}
+
+body
+{
+    background: url(../images/pexels-photo-853199.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,126 @@
+<!--
+        Copyright (C) 2019 OM SANTOSHKUMAR MASNE. All Rights Reserved.
+        Licensed under the GNU Affero General Public License v3.0 only (AGPL-3.0-only) license.
+        See License.txt in the project root for license information.
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FLACK</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+
+        <script type="text/javascript" src="../static/javascript/socket.io.min.js"></script>
+
+        <link rel="stylesheet" href="../static/CSS/bootstrap/bootstrap.min.css">
+        <script src="../static/javascript/popper.min.js"></script>
+        <script src="../static/javascript/jquery-3.3.1.slim.min.js"></script>
+        <script src="../static/CSS/bootstrap/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="../static/CSS/styles.css">
+        <script src="../static/javascript/manager.js"></script>
+    </head>
+
+    <body>
+
+        <div id="login_modal"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="navbar-brand">
+                <span>HELLO,</span>
+                <span id="username">THE USERNAME</span>
+                <span>!</span>
+            </div>
+            <div class="navbar-collapse" id="navbar-menu">
+                <div class="navbar-nav ml-auto">
+                    <button class="btn btn-success" id="logout">LOGOUT</button>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+
+        <div id="app_window" class="container">
+            <div class=" d-flex p-2 flex-row justify-content-between">
+                <div id="delete_msg_div" class="d-flex">
+                    <button class="btn btn-danger" id="delete_msg_btn" >DELETE MESSAGE</button>
+                </div>
+
+                <div id="channels_control" class="d-flex">
+                    <button class="btn btn-success" id="new_channel">CREATE NEW CHANNEL</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-between" id="inner_app_window">
+                <div class="w-25 h-100 d-inline-block" id="channels_style">
+                    <h3>CHANNELS</h3>
+                    <ul id="channels">
+                        <li id="modal_channel"><h2>Channels appear here.</h2></li>
+                    </ul>
+                </div>
+                <div class="w-50 h-100 d-inline-block" id="msgs_style">
+                    <h2>MESSAGES</h2>
+                    <ul id="msgs">
+                        <li id="modal_msg"><h2>Messages appear here.</h2></li>
+                    </ul>
+                </div>
+                <div class="w-25 h-100 d-inline-block" id="server_users_style">
+                    <h2>ACTIVE USERS</h2>
+                    <ul id="server_users">
+                    </ul>
+                </div>
+            </div>
+
+            <div id="message_box">
+                <div id="channel_info">Channel's creator: THE CREATOR</div>
+            </div>
+
+            <div id="user_msg_send">
+                <form>
+                    <input type="text" id="user_msg" placeholder="Your message here.">
+                    <button class="btn btn-primary">SEND MESSAGE</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <form id="get_username">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal_title_text">Enter your name:</h4>
+                            <button id="modal_close_btn" type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <input id="modal_user_response" type="text" placeholder="YOUR NAME HERE">
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button id="modal_submit" type="button" class="btn btn-success" data-dismiss="modal">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            This website is created by <span id="creator">OM SANTOSHKUMAR MASNE</span>.
+            <br>
+            This is a project website for edX's course "Web programming with python and javascript".
+            <br>
+            This is a browser based online chat application - FLACK!
+            <br>
+            <br>
+        </div>
+
+    </body>
+</html>
