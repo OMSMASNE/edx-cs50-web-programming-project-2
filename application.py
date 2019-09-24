@@ -172,7 +172,7 @@ def msg_list(data):
 @socketio.on("msg_removal")
 def msg_removal(data):
     for_channel = str(data["for_channel"])
-    msg_removal_list = str(data["msg_removal_list"])
+    msg_removal_list = data["msg_removal_list"]
 
     for channel in channels:
          if channel.name == for_channel:
