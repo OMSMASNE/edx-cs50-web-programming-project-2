@@ -21,7 +21,7 @@
 #### SETUP:
 
 * Create an environment variable `SECRET_KEY` and set its value to a random string or something else.
-* This `SECRET_KEY` is needed for the flask app,
+* This `SECRET_KEY` is needed for the flask app.
 
 #### Type the following commands in the terminal:
 
