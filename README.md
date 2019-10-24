@@ -63,7 +63,7 @@ Then: `flask run`
 
 * All the registered users can be seen in the ACTIVE USERS section.
 
-* The user also has an option to delete his message. The user needs to select the message(s) which the user wants to delete and press the DELETE MESSAGE button
+* The user also has an option to delete his message. The user needs to select the message(s) which the user wants to delete and press the DELETE MESSAGE button.
 
 
 A footer is also shown on index (homepage) page, displaying the name of the creator of this project and short information about the project.
