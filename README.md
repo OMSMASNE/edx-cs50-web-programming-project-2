@@ -35,7 +35,7 @@ Then: `flask run`
 
 ---
 
-### The website's functions is as follows:
+### The website functions as follows:
 
 * This project is a single page application.
 
