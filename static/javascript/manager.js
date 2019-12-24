@@ -22,6 +22,13 @@ document.addEventListener("DOMContentLoaded", manage);
 // The main function used for startup.
 function manage()
 {
+    // Add some space between the Chat window and the Footer.
+    var screen_height = screen.height;
+    if(screen_height < 800)
+    {
+        document.getElementById("space-maker").innerHTML = "<br><br><br><br><br>";
+    }
+
     // A variable for keeping track of the new channel's name.
     var new_channel_name;
 
